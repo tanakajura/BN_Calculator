@@ -15,7 +15,7 @@ html {
 }
 
 #container {
-    background-color: black;
+    background-color: whitesmoke;
     border: 10px solid rgba(47,47,47,1);
     border-radius: 4px;
     display: grid;
@@ -38,73 +38,49 @@ html {
     margin: 5px;
 }
 
-button {
-    margin: 1px;
-    border-radius: 5%;
+body {
+    background-color: #e8e8e8;
+    font-family: 'Roboto', sans-serif;
+}
+.calculator-div {
+    margin: 10% 20%;
+}
+.calculator-div .screen {
+    display: flex;
+}
+.calculator-div .screen input {
+    flex: 1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     border: none;
-    font-weight: initial;
-    font-size: 2em;
-    font-family: monospace;
-    color: black;
+    padding: 20px;
+    background-color: #3a3030;
+    color: white;
+    font-size: 2rem;
 }
-
-
-#zero {
-    grid-column: span 2;
+.calculator-div .row {
+    display: flex;
 }
-
-.operator {
-    background-color: #FF8F1F;    
+.calculator-div .row button {
+    flex: 1;
+    margin: 5px;
+    padding: 15px;
+    font-size: 2rem;
 }
-
-.operator:focus {
-    background-color: #ffc183;
+.calculator-div .last-row {
+    display: flex;
 }
-
-.equals {
-    background-color: #FF8F1F;
+.calculator-div .last-row  {
+    display: flex;
 }
-
-.equals:active {
-    background-color: #ffc183;
+.calculator-div .last-row button {
+    flex: 1;
+    margin: 5px;
+    padding: 15px;
+    font-size: 2rem;
 }
-
-.operand {
-    background-color: #217C7E;
-}
-
-.operand:active {
-    background-color: #33b9bb;
-}
-
-.decimal {
-    background-color: #217C7E;
-}
-
-.decimal:active {
-    background-color: #33b9bb;
-}
-
-.clear {
-    background-color: dodgerblue;
-}
-
-.clear:active {
-    background-color: rgb(123, 189, 255);
-}
-
-.sign {
-    background-color: dodgerblue;
-}
-
-.sign:active {
-    background-color: rgb(123, 189, 255);
-}
-
-.percent {
-    background-color: dodgerblue;
-}
-
-.percent:active {
-    background-color: rgb(123, 189, 255);
+.calculator-div .last-row button.number {
+    flex: 2.3;
 }
